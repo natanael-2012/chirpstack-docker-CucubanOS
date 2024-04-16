@@ -1,6 +1,6 @@
 # This file contains an example US915 example (channels 40-47 + 69).
 [[regions]]
-
+ 
   # ID is an use-defined identifier for this region.
   id="us915_5"
 
