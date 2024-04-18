@@ -248,7 +248,7 @@ marshaler="protobuf"
     ]
 
     # Connect with the given username (optional)
-    username="gateway_bridge"
+    username=""
 
     # Connect with the given password (optional)
     password=""
