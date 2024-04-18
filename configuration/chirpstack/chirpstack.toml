@@ -89,7 +89,7 @@
   enabled=["mqtt"]
 
   [integration.mqtt]
-    server="tcp://$MQTT_BROKER_HOST:1883/"
+    server="tcp://mosquitto:1883/"
     json=true
 
 
