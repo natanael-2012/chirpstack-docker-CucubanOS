@@ -193,7 +193,7 @@ marshaler="protobuf"
   # MQTT integration configuration.
   [integration.mqtt]
   # Event topic template.
-  event_topic_template="us915_1/gateway/{{ .GatewayID }}/event/{{ .EventType }}"
+  event_topic_template="us915_0/gateway/{{ .GatewayID }}/event/{{ .EventType }}"
 
   # State topic template.
   #
@@ -201,10 +201,10 @@ marshaler="protobuf"
   # so that the last message will be stored by the MQTT broker. When set to
   # a blank string, this feature will be disabled. This feature is only
   # supported when using the generic authentication type.
-  state_topic_template="us915_1/gateway/{{ .GatewayID }}/state/{{ .StateType }}"
+  state_topic_template="us915_0/gateway/{{ .GatewayID }}/state/{{ .StateType }}"
 
   # Command topic template.
-  command_topic_template="us915_1/gateway/{{ .GatewayID }}/command/#"
+  command_topic_template="us915_0/gateway/{{ .GatewayID }}/command/#"
 
   # State retained.
   #
