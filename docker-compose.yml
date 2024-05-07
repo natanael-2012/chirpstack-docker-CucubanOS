@@ -73,7 +73,7 @@ services:
     image: eclipse-mosquitto:2
     restart: unless-stopped
     ports:
-      - 1883:1883
+      - 2000:2000
     volumes: 
       - ./configuration/mosquitto/config/:/mosquitto/config/
 
