@@ -343,7 +343,7 @@
     json=true
 
     # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
-    server="tcp://mosquitto:2000/"
+    server="tcp://mosquitto:1883/"
 
     # Connect with the given username (optional)
     username=""
