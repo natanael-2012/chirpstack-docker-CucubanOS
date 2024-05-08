@@ -250,4 +250,4 @@
       #
       # set this to 0 to use the default frequency plan for the configured region
       # (which could be frequency hopping).
-      ping_slot_frequency=0
+      ping_slot_frequency=923300000
