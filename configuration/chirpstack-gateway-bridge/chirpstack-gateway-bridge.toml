@@ -54,26 +54,26 @@ join_euis=[
 #   * semtech_udp
 #   * concentratord
 #   * basic_station
-type="semtech_udp"
+type="basic_station"
 
 
-  # Semtech UDP packet-forwarder backend.
-  [backend.semtech_udp]
+  # # Semtech UDP packet-forwarder backend.
+  # [backend.semtech_udp]
 
-  # ip:port to bind the UDP listener to
-  #
-  # Example: 0.0.0.0:1700 to listen on port 1700 for all network interfaces.
-  # This is the listener to which the packet-forwarder forwards its data
-  # so make sure the 'serv_port_up' and 'serv_port_down' from your
-  # packet-forwarder matches this port.
-  udp_bind = "0.0.0.0:1700"
-  # udp_bind = "52.179.102.73:1700"
+  # # ip:port to bind the UDP listener to
+  # #
+  # # Example: 0.0.0.0:1700 to listen on port 1700 for all network interfaces.
+  # # This is the listener to which the packet-forwarder forwards its data
+  # # so make sure the 'serv_port_up' and 'serv_port_down' from your
+  # # packet-forwarder matches this port.
+  # udp_bind = "0.0.0.0:1700"
+  # # udp_bind = "52.179.102.73:1700"
 
-  # Fake RX timestamp.
-  #
-  # Fake the RX time when the gateway does not have GPS, in which case
-  # the time would otherwise be unset.
-  fake_rx_time=false
+  # # Fake RX timestamp.
+  # #
+  # # Fake the RX time when the gateway does not have GPS, in which case
+  # # the time would otherwise be unset.
+  # fake_rx_time=false
 
 
   # ChirpStack Concentratord backend.
@@ -86,60 +86,60 @@ type="semtech_udp"
   # command_url="ipc:///tmp/concentratord_command"
 
 
-  # # Basic Station backend.
-  # [backend.basic_station]
+  # Basic Station backend.
+  [backend.basic_station]
 
-  # # ip:port to bind the Websocket listener to.
-  # bind=":3001"
+  # ip:port to bind the Websocket listener to.
+  bind=":3001"
 
-  # # TLS certificate and key files.
-  # #
-  # # When set, the websocket listener will use TLS to secure the connections
-  # # between the gateways and ChirpStack Gateway Bridge (optional).
-  # tls_cert=""
-  # tls_key=""
+  # TLS certificate and key files.
+  #
+  # When set, the websocket listener will use TLS to secure the connections
+  # between the gateways and ChirpStack Gateway Bridge (optional).
+  tls_cert=""
+  tls_key=""
 
-  # # TLS CA certificate.
-  # #
-  # # When configured, ChirpStack Gateway Bridge will validate that the client
-  # # certificate of the gateway has been signed by this CA certificate.
-  # ca_cert=""
+  # TLS CA certificate.
+  #
+  # When configured, ChirpStack Gateway Bridge will validate that the client
+  # certificate of the gateway has been signed by this CA certificate.
+  ca_cert=""
 
-  # # Stats interval.
-  # #
-  # # This defines the interval in which the ChirpStack Gateway Bridge forwards
-  # # the uplink / downlink statistics.
-  # stats_interval="30s"
+  # Stats interval.
+  #
+  # This defines the interval in which the ChirpStack Gateway Bridge forwards
+  # the uplink / downlink statistics.
+  stats_interval="30s"
 
-  # # Ping interval.
-  # ping_interval="1m0s"
+  # Ping interval.
+  ping_interval="1m0s"
 
-  # # Timesync interval.
-  # #
-  # # This defines the interval in which the ChirpStack Gateway Bridge sends
-  # # a timesync request to the gateway. Setting this to 0 disables sending
-  # # timesync requests.
-  # timesync_interval="0s"
+  # Timesync interval.
+  #
+  # This defines the interval in which the ChirpStack Gateway Bridge sends
+  # a timesync request to the gateway. Setting this to 0 disables sending
+  # timesync requests.
+  timesync_interval="0s"
 
-  # # Read timeout.
-  # #
-  # # This interval must be greater than the configured ping interval.
-  # read_timeout="1m5s"
+  # Read timeout.
+  #
+  # This interval must be greater than the configured ping interval.
+  read_timeout="1m5s"
 
-  # # Write timeout.
-  # write_timeout="1s"
+  # Write timeout.
+  write_timeout="1s"
 
-  # # Region.
-  # #
-  # # Please refer to the LoRaWAN Regional Parameters specification
-  # # for the complete list of common region names.
-  # region="US915"
+  # Region.
+  #
+  # Please refer to the LoRaWAN Regional Parameters specification
+  # for the complete list of common region names.
+  region="US915"
 
-  # # Minimal frequency (Hz).
-  # frequency_min=863000000
+  # Minimal frequency (Hz).
+  frequency_min=863000000
 
-  # # Maximum frequency (Hz).
-  # frequency_max=870000000
+  # Maximum frequency (Hz).
+  frequency_max=870000000
 
   # # Concentrator configuration.
   # #
