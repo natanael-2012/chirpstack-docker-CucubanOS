@@ -16,9 +16,9 @@ type="basic_station"
 
   [backend.basic_station]
   bind=":3001"
-  tls_cert=""
-  tls_key=""
-  ca_cert=""
+  tls_cert="/configuration/chirpstack-gateway-bridge/certs/server.crt"
+  tls_key="/configuration/chirpstack-gateway-bridge/certs/server.key"
+  ca_cert="/configuration/chirpstack-gateway-bridge/certs/ca.crt"
 
   region="US915"
   frequency_min=923000000
