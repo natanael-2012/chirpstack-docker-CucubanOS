@@ -96,8 +96,8 @@ type="basic_station"
   #
   # When set, the websocket listener will use TLS to secure the connections
   # between the gateways and ChirpStack Gateway Bridge (optional).
-  tls_cert="/etc/configuration/chirpstack-gateway-bridge/certs/server.crt"
-  tls_key="/etc/configuration/chirpstack-gateway-bridge/certs/server.key"
+  tls_cert="/etc/configuration/certs/server.crt"
+  tls_key="/etc/configuration/certs/server.key"
 
   # TLS CA certificate.
   #
