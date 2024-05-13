@@ -103,7 +103,7 @@ type="basic_station"
   #
   # When configured, ChirpStack Gateway Bridge will validate that the client
   # certificate of the gateway has been signed by this CA certificate.
-  #ca_cert="configuration/chirpstack-gateway-bridge/certs/ca.crt"
+  ca_cert=""
 
   # Stats interval.
   #
