@@ -79,6 +79,14 @@ services:
     volumes: 
       - ./configuration/mosquitto/config/:/mosquitto/config/
 
+  chirpstack-certificates:
+    build:
+      context: .
+      dockerfile: Dockerfile-devel
+    volumes:
+      - ./:/chirpstack-certificates
+  
+
 volumes:
   postgresqldata:
   redisdata:
