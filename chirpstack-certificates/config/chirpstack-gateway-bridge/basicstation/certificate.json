@@ -1,7 +1,7 @@
 {
   "CN": "chirpstack-gateway-bridge",
   "hosts": [
-    "127.0.0.1",
+    "52.179.102.73",
     "localhost"
   ],
   "key": {
