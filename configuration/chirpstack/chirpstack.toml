@@ -114,8 +114,8 @@
   # will generate client certificates which can be used by the gateway for
   # authentication and authorization. The Common Name of the certificate will
   # be set to the Gateway ID.
-  ca_key="/etc/certs/ca/ca-key.pem"
-  ca_cert="/etc/certs/ca/ca.pem"
+  #ca_key="/etc/certs/ca/ca-key.pem"
+  #ca_cert="/etc/certs/ca/ca.pem"
 
   # Certificate lifetime.
   #
