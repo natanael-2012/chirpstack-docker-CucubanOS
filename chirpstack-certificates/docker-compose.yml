@@ -1,7 +1,0 @@
-services:
-  chirpstack-certificates:
-    build:
-      context: .
-      dockerfile: Dockerfile-devel
-    volumes: 
-      - ./:/chirpstack-certificates
